@@ -14,8 +14,8 @@ const Contact = ({ contact }) => {
         <div className="contact-data">
           <h2 className="contact-name">{ contact.name }</h2>
           <hr />
-          <p className="contact-phone"><span>Phone Number : </span>{ contact.phone }</p>
-          <span className="contact-email"><span>Email : </span>{ contact.email }</span>
+          <p className="contact-phone">{ contact.phone }</p>
+          <span className="contact-email">{ contact.email }</span>
         </div>
       </div>
     </>
