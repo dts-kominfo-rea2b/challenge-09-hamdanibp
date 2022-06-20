@@ -10,8 +10,8 @@ const App = () => {
     <div className="App">
       <Header />
       {
-        contacts.map(item => {
-          return ( <Contact contact={ item } key={ item.email } /> )
+        contacts.map(contact => {
+          return ( <Contact data={ contact } key={ contact.email } /> )
         })
       }
     </div>

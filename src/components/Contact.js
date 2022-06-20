@@ -3,19 +3,19 @@
 import React from 'react';
 import "./Contact.css";
 
-const Contact = ({ contact }) => {
+const Contact = ({ data }) => {
   return (
     <>
       <div className="contact-wrapper">
         <figure>
-          <img className="contact-image" src={ contact.photo } alt="profilepicture" />
+          <img className="contact-image" src={ data.photo } alt="profilepicture" />
         </figure>
 
         <div className="contact-data">
-          <h2 className="contact-name">{ contact.name }</h2>
+          <h2 className="contact-name">{ data.name }</h2>
           <hr />
-          <p className="contact-phone">{ contact.phone }</p>
-          <span className="contact-email">{ contact.email }</span>
+          <p className="contact-phone"><span>Phone Number : </span>{ data.phone }</p>
+          <span className="contact-email"><span>Email : </span>{ data.email }</span>
         </div>
       </div>
     </>
