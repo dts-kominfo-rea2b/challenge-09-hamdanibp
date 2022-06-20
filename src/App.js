@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <Header />
       {
-        contacts.map(item => ( <Contact item={ item } key={ item.email } /> ))
+        contacts.map(item => ( <Contact contact={ item } key={ item.email } /> ))
       }
     </div>
   );
